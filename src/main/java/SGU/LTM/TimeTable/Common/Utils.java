@@ -28,7 +28,7 @@ public class Utils {
                         s+=String.valueOf(i)+",";
                 if (!s.equalsIgnoreCase(""))
                     s = s.substring(0, s.length() - 1);
-                if ((!daysOn.equalsIgnoreCase("")&&daysOn.equalsIgnoreCase(s)) && ((afternoon == false && morning == false) || (t.isAfternoon() == afternoon && t.isMorning() == morning)))
+                if ((daysOn.equalsIgnoreCase("")||(!daysOn.equalsIgnoreCase("")&&daysOn.equalsIgnoreCase(s))) && ((afternoon == false && morning == false) || (t.isAfternoon() == afternoon && t.isMorning() == morning)))
                     result.add(t);
             }
         }

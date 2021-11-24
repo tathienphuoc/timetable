@@ -28,6 +28,8 @@ public class Class {
         return null;
     }
 
+    // week = [1,1,0,0,0,1,1,0,0,1]
+
     public boolean isConfict(List<Session> sessions) {
         boolean[][] curState = new boolean[8][13];
         for (Session s : this.getSessions()) {
