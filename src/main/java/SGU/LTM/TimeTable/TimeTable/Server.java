@@ -26,7 +26,7 @@ public class Server extends SGU.LTM.TimeTable.Common.Server {
     }
 
     public static List<Subject> callAPI(String subjects) throws Exception{
-        String url = "https://timetable-crawler.herokuapp.com/api/subjects?s=" + subjects;
+        String url = "http://103.6.169.208:3000/api/subjects?s=" + subjects;
         String json = null;
         try {
             json = Jsoup.connect(url).ignoreContentType(true).execute().body();

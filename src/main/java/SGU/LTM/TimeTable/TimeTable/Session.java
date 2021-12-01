@@ -39,10 +39,17 @@ public class Session {
 
     public JSONObject toJSON() {
         JSONObject obj = new JSONObject();
-        obj.put("day", String.valueOf(this.day) );
-        obj.put("start", String.valueOf(this.start) );
-        obj.put("length", String.valueOf(this.length) );
-        obj.put("room", String.valueOf(this.room) );
+//        obj.put("day", String.valueOf(this.day) );
+//        obj.put("start", String.valueOf(this.start) );
+//        obj.put("length", String.valueOf(this.length) );
+//        obj.put("room", String.valueOf(this.room) );
+
+        //
+
+        obj.put("day", this.day);
+        obj.put("start", this.start);
+        obj.put("length", this.length);
+        obj.put("room", this.room);
         return obj;
     }
 
@@ -56,6 +63,7 @@ public class Session {
         }
         return false;
     }
+
     @Override
     public int hashCode() {
         return (this.room.hashCode());
